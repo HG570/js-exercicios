@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+</head>
+<body>
+    <h2>Calculadora de Custo para Assentar Piso</h2>
+
+    <label for="comprimento">Comprimento do cômodo:</label>
+    <input type="number" id="comprimento" name="comprimento" step="0.01">
+    <br><br>
+    
+    <label for="largura">Largura do cômodo:</label>
+    <input type="number" id="largura" name="largura" step="0.01">
+    <br><br>
+
+    <button onclick="calcularCusto()">Calcular</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        <!--
+            function calcularCusto() {
+                let comprimento = parseFloat(document.getElementById("comprimento").value);
+                let largura = parseFloat(document.getElementById("largura").value);
+                let precoMetroQuadrado = 36.00;
+                let area = comprimento * largura;
+                let custo = area * precoMetroQuadrado;
+                let resultado = document.getElementById("resultado");
+                resultado.innerHTML = "Custo para assentar o piso: R$ " + custo.toFixed(2);
+            }
+        -->
+    </script>
+    
+</body>
+</html>

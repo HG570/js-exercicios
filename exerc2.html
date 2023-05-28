@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+</head>
+<body>
+    <h2>Conversor de Temperatura</h2>
+
+    <label for="tipo">Converter para:</label>
+    <select id="tipo" name="tipo">
+      <option value="celsius">Celsius para Fahrenheit</option>
+      <option value="fahrenheit">Fahrenheit para Celsius</option>
+    </select>
+
+    <br><br>
+    <label for="temp">Temperatura:</label>
+    <input type="number" id="temp" name="temp">
+  
+    <button onclick="converterTemperatura()">Converter</button>
+  
+    <p id="resultado"></p>
+  
+    <script>
+        <!--
+            function converterTemperatura() {
+                let temperatura = parseFloat(document.getElementById("temp").value);
+                let tipo = document.getElementById("tipo").value;
+                let resultado = document.getElementById("resultado");
+        
+                if (tipo === "celsius") {
+                    let fahrenheit = (temperatura * 9/5) + 32;
+                    resultado.innerHTML = temperatura + " graus Celsius equivalem a " + fahrenheit + " graus Fahrenheit.";
+                } else if (tipo === "fahrenheit") {
+                    let celsius = (temperatura - 32) * 5/9;
+                    resultado.innerHTML = temperatura + " graus Fahrenheit equivalem a " + celsius + " graus Celsius.";
+                }
+            }
+        -->
+    </script>
+    
+</body>
+</html>

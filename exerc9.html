@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+</head>
+<body>
+    <h2>Jogo da Forca</h2>
+
+    <p>Adivinhe a palavra oculta:</p>
+
+    <div id="palavra"></div>
+    <br>
+    
+    <p><b>Letras erradas:</b> <span id="erros"></span></p>
+
+    <p><b>Tentativas restantes:</b> <span id="tentativas"></span></p>
+
+    <label for="adivinhar">Digite uma letra:</label>
+    <input type="text" id="adivinhar" name="adivinhar">
+    <button onclick="verificarLetra()">Verificar</button>
+    <button onclick="mostrarDica()">Dica</button>
+    
+    <script>
+        <!--
+            let palavraOculta = "javascript";
+            let palavraOcultaB = palavraOculta.split("");
+            let palavraAdivinhada = Array(palavraOculta.length).fill("_");
+            let letrasErradas = [];
+            let tentativasRestantes = 6;
+
+            function mostrarDica() {
+                alert("Dica: É uma linguagem de programação.");
+            }
+
+            function verificarLetra() {
+                let palpite = document.getElementById("adivinhar").value.toLowerCase();
+                document.getElementById("adivinhar").value = "";
+
+                if (!palpite || palpite.length !== 1 || !palpite.match(/[a-z]/i)) {
+                    alert("Digite uma letra válida!");
+                    return;
+                }
+
+                if (palavraOcultaB.includes(palpite)) {
+                    for (let i = 0; i < palavraOcultaB.length; i++) {
+                    if (palavraOcultaB[i] === palpite) {
+                        palavraAdivinhada[i] = palpite;
+                    }
+                    }
+
+                    if (!palavraAdivinhada.includes("_")) {
+                    setTimeout(function() {
+                        alert("Parabéns! Você acertou a palavra!");
+                    }, 500);
+                    }
+                } else {
+                    letrasErradas.push(palpite);
+                    tentativasRestantes--;
+
+                    if (tentativasRestantes === 0) {
+                    setTimeout(function() {
+                        alert("Fim de jogo! A palavra era '" + palavraOculta + "'.");
+                    }, 500);
+                    }
+                }
+
+                atualizarInterface();
+                }
+
+                function atualizarInterface() {
+                document.getElementById("palavra").innerHTML = palavraAdivinhada.join(" ");
+                document.getElementById("erros").innerHTML = letrasErradas.join(", ");
+                document.getElementById("tentativas").innerHTML = tentativasRestantes;
+                }
+
+                atualizarInterface();
+        -->
+    </script>
+</body>
+</html>
